@@ -1,0 +1,19 @@
+{
+  "name": "unipass",
+  "version": "1.0.0",
+  "description": "Unipass - Gym Check-in System MVP",
+  "private": true,
+  "scripts": {
+    "dev": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "start": "cd frontend && npm start",
+    "install-all": "cd frontend && npm install && cd ../backend && pip install -r requirements.txt",
+    "dev:frontend": "cd frontend && npm start",
+    "dev:backend": "cd backend && python -m uvicorn main:app --reload --host 0.0.0.0 --port 8000",
+    "init-db": "cd backend && python scripts/init_db.py",
+    "db-maintenance": "cd backend && python scripts/db_maintenance.py"
+  },
+  "workspaces": ["frontend"],
+  "keywords": ["gym", "checkin", "react", "fastapi", "typescript"],
+  "author": "Unipass Team"
+}
